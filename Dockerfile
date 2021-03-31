@@ -13,10 +13,10 @@ RUN apt-get install zip -y
 
 RUN wget https://github.com/ZENZO-Ecosystem/ZENZO-Core/releases/download/v2.1.0/zenzo-2.1.0-x86_64-linux-gnu.tar.gz
 RUN tar -xvf zenzo-2.1.0-x86_64-linux-gnu.tar.gz
-RUN chmod +x zenzo-2.1.0 \
+RUN chmod +x zenzo-2.1.0/bin/zenzod \
     && mkdir .zenzo \
     && cd .zenzo \
-    && touch zenzo.conf
+    #&& touch zenzo.conf
 
 COPY zenzo.conf .zenzo/
 #RUN echo "rpcuser=user \
