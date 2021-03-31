@@ -7,7 +7,7 @@ Dockerized Zenzo Masternode
     - docker build -t zenzo/v1:latest .
 
 3. Run the Dockerimage
-    - docker run -d -it --name zenzoMaster -v /zenzoData:/zenzo-2.1.0 zenzo/v1:latest 
+    - docker run -d -it --name zenzoMaster -p 26210:26210 -v /zenzoData:/zenzo-2.1.0 zenzo/v1:latest 
 
 4. Inspect the Container
     - docker exec -it zenzoMaster bash
