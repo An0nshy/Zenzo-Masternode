@@ -18,7 +18,7 @@ RUN chmod +x zenzo-2.1.0/bin/zenzod \
     && cd .zenzo \
     #&& touch zenzo.conf
 
-COPY zenzo.conf .zenzo/
+COPY zenzo.conf /root/.zenzo/zenzo.conf
 #RUN echo "rpcuser=user \
 #rpcpassword=EZiIuXutqp2Nf79LVQ \
 #rpcallowip=127.0.0.1 \
