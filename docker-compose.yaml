@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+    nodewatch:
+        build: watch/.
+        ports:
+            - 3000:3000
+    zenzo:
+        build: .
+        ports:
+            - 26210:26210
+            - 26211:26211
