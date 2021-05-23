@@ -46,4 +46,4 @@ RUN cp /zenzo-2.1.0/bin/zenzo-cli /usr/local/bin/
 COPY start.sh /
 RUN chmod +x start.sh
 
-CMD ["/bin/bash"]
+CMD ["pm2-runtime", "/forge/lib/index.js"]
