@@ -13,6 +13,7 @@ RUN apt-get install zip -y
 RUN apt-get install -y nodejs npm
 RUN apt-get install -y libgtk-3-0
 RUN apt install -y git
+RUN npm i npm@latest -g
 RUN npm -v
 
 #RUN curl -fsSL https://deb.nodesource.com/setup_15.x | -E bash -
