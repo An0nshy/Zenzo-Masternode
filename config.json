@@ -1,0 +1,10 @@
+{
+    "fullnode":true,"wallet":
+    {
+        "datadir":"/root/.zenzo/",
+        "user":"user","pass":"forgepass",
+        "port":26211,
+        "address":"ZrKZd3zuUk1StAUqPteBS1vVtEH7FjaPa9"
+    },
+    "forgeport":9002,"maxinvalidscore":25,"debug":"me,validations,net"
+}
