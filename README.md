@@ -8,9 +8,10 @@ Dockerized Zenzo Masternode
 
 3. Run the Dockerimage
     - docker run -d -it --name zenzoMaster -p 26210:26210 -v zenzoData:/zenzo-2.1.0 zenzo/v1:latest 
+    - docker exec -it zenzoMaster ./start.sh
 
 4. Inspect the Container or paste your config stuff manual in the container. You can find your zenzo.conf in /root/.zenzo/
-    - docker exec -it zenzoMaster bash
+    - docker exec -it zenzoMaster zenzo-cli getinfo
     - zenzo-cli getinfo
 
 You should be able to get some Connections and start Syncing with the Blocks. Happy Staking.
