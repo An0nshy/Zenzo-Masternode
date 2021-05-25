@@ -2,6 +2,7 @@ Dockerized Zenzo Masternode
 
 1. Set your Credentials
     - Please edit the zenzo.conf file with your rpc credentials and the Masternode PrivKey + Public Server IP
+    - Edit the config.json for the Forge Node with your credentials.
 
 2. Build the Dockerimage
     - docker build -t zenzo/v1:latest .
