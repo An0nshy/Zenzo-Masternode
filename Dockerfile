@@ -20,7 +20,7 @@ RUN npm -v
 RUN npm i pm2 -g
 
 RUN git clone https://github.com/ZENZO-Ecosystem/zenzo-forge.git forge
-RUN cd forge
+WORKDIR /forge
 RUN npm i
 RUN cd lib
 WORKDIR /forge/lib/
